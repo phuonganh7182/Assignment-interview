@@ -1,0 +1,31 @@
+Programming Exercise
+list(c(11, 12, 5, 2), c(15, 6, 10), c(10, 8, 12, 5), c(12, 15, 8, 6))
+list<-list(c(11, 12, 5, 2), c(15, 6, 10), c(10, 8, 12, 5), c(12, 15, 8, 6))
+A<-c(list[[1]], list[[2]], list[[3]], list[[4]])
+#using base libraries
+#Sum of all numbers
+sum(A)
+#Average of all numbers
+mean(A)
+#Sum of all even numbers
+sum(A[A%%2==0])
+#Avarage of all even numbers
+mean(A[A%%2==0])
+#Sum of all odd numbers
+sum(A[A%%2!=0])
+#Average of all odd numbers
+mean(A[A%%2!=0])
+
+#without using base libraries
+#Sum of all numbers
+a<-11+3*12+2*5+2+2*15+2*6+2*10+2*8
+#Average of all numbers
+a/15
+#Sum of all even numbers
+b<-3*12+2+2*6+2*10+2*8
+#Avarage of all even numbers
+b/10
+#Sum of all odd numbers
+c<- a-b
+#Average of all odd numbers
+c/5
